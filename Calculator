@@ -1,0 +1,89 @@
+#Project1
+print("\n\t\t\t\t\tCALCULATOR")
+def add():
+    try:
+     a=int(input("Enter a value to sum:"))
+     b=int(input("Enter a value to sum:"))
+     return a+b
+    except ZeroDivisionError:
+       print("Zero Cannot add..")
+
+def add_float():
+    try:
+     a=float(input("Enter a value to sum:"))
+     b=float(input("Enter a value to sum:"))
+     return a+b
+    except ZeroDivisionError:
+        print("Zero Cannot subtract..")
+
+def sub():
+    try:
+     a=int(input("Enter a value to subtract:"))    
+     b=int(input("Enter a value to subtract:"))
+     return a-b
+    except ZeroDivisionError:
+        print("Zero Cannot subtract..")
+       
+def mul():
+    try:
+     a=int(input("Enter a value to multiply:"))
+     b=int(input("Enter a value to multiply:"))
+     return a*b
+    except ZeroDivisionError:
+        print("Zero Cannot multiply..")
+
+def divide():
+    try:
+     a=int(input("Enter a value to divide:"))    
+     b=int(input("Enter a value to divide:"))
+     return a//b
+    except ZeroDivisionError:
+        print("Zero Cannot divide..")
+
+def divide_Float():
+    try:
+     a=float(input("Enter a value to divide:"))    
+     b=float(input("Enter a value to divide:"))
+     return a/b
+    except ZeroDivisionError:
+        print("Zero Cannot add..")
+
+while True:
+ print("\n\t\t\t\t\tMENU")
+ print("1.ADD")
+ print("2.ADD_FLOAT")
+ print("3.SUBTRACT")
+ print("4.MULTIPLY")
+ print("5.DIVIDE")
+ print("6.DIVIDE_FLOAT")
+ print("7.EXIT")
+ choice=int(input("Enter your choice:"))
+ if choice==1:
+    print("1.ADD")
+    print("ADD:",add())
+
+ elif choice==2:
+    print("1.ADD_Float")
+    print("ADD_FLOAt:",add_float())
+
+ elif  choice==3:
+    print("3.SUBTRACT")
+    print("SUBTRACT:",sub())
+
+ elif choice==4:
+    print("4.MULTIPLY")
+    print("MULTIPLY:",mul())
+
+ elif choice==5:
+    print("5.DIVIDE")
+    print("DIVIDE::",divide_Float())
+
+ elif choice==6:
+    print("6.DIVIDE_FLOAT")
+    print("DIVIDE_FLOAT:",divide_Float())
+
+ elif choice==7:
+    print("EXIT PROGRAM...")
+    break
+ else:
+    print("Invalid Choice...")

@@ -1,0 +1,28 @@
+#Project10
+import random
+print("\n\t\t\t\t\t\tRock Paper Scissor Game:")
+while True:
+ choice=["rock","paper","scissor"]
+ computer=random.choice(choice)
+ user=str(input("Enter a choice:"))
+ if user == "rock" and computer == "paper":
+    print("Computer wins")
+
+ elif user == "rock" and computer == "scissor":
+    print("You win")
+
+ elif user == "paper" and computer == "rock":
+    print("You win")
+
+ elif user == "paper" and computer == "scissor":
+     print("Computer wins")
+
+ elif user == "scissor" and computer == "paper":
+    print("You win")
+
+ elif user == "scissor" and computer == "rock":
+    print("Computer wins")
+
+ elif user == computer:
+    print("Draw")
+    

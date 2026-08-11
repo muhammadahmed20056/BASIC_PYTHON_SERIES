@@ -1,0 +1,28 @@
+#project3
+while True:
+ print("\n\t\t\t\t\tEven And Odd Checker")
+ def even():
+    a=int(input("Enter a number to check its even.."))
+    if a %2==0:
+        print(f"This is a{a}even number.")
+    else:
+       print("This is not a even number..")
+
+ def odd():
+    a=int(input("Ente a number to check its odd.."))
+    if a %2!=0:
+        print(f"This is a{a}odd number.")
+    else:
+       print("This is not a odd nummber..")
+
+ print("\n\t\t\t\t\tMENU")
+ print("1.Even Checker:")
+ print("2.Odd Checker:")
+ print("3.Exit")
+ choice=int(input("Enter a choice:"))
+ if choice==1:
+    even()
+ elif choice==2:
+    odd()
+ elif choice==3:
+    print("Exit Program..")

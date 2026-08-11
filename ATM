@@ -1,0 +1,30 @@
+#Project7
+balance=5000
+while True:
+ print("ATM")
+ print("\n\t\t\t\t\tMENU")
+ print("1.Check Balance")
+ print("2.Deposit")
+ print("3.Withdraw")
+ print("4.Exit")
+ choice=int(input("Enter a choice:"))
+ if choice==1:
+    print("1.Check Balance:")
+    print("Balance:",balance)
+
+ elif choice==2:
+    print("2.Deposit:")
+    amount=float(input("Enter amount to deposit:"))
+    balance+=amount
+    print("Your Deposit:",balance)
+   
+ elif choice==3:
+    print("3.WithDraw:")
+    amount=float(input("Enter amount to withdraw:"))
+    amount-=balance
+    print("Your withdraw:",balance)
+
+ elif choice==4:
+    print("4.Exit:")
+    print("Exit Program..")
+    break

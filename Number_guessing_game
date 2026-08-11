@@ -1,0 +1,18 @@
+#project2
+import random
+while True:
+ computer=random.randint(1,100)
+ score=0
+ user=int(input("Enter a random number:"))
+ score+=1
+ if computer>user:
+    print("Too Low..")
+    score+=1
+ elif computer<user:
+    print("Too High..")
+    score+=1
+ elif computer==user:
+    print("You Won..")
+    print("You won on total attempt",score)
+
+ 

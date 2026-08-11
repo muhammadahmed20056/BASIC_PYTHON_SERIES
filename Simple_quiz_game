@@ -1,0 +1,38 @@
+#Project4
+score=0
+print("\n\t\t\t\t\tQUIZ GAME:")
+print("1.Which city is the capital of pakistan?\na.Lahore\nb.Karachi\nc.Islamabad\nd.Multan")
+choice=str(input("Enter a choice:"))
+if choice=="c":
+    print("Correct Answer!")
+    score+=1
+else:
+    print("Wrong..")
+print("Score",score)
+
+print("2.Which language is mainly used for Data Science?\na.HTML\nb.Python\nc.CSS\nd.SQL")
+choice=str(input("Enter a choice:"))
+if choice=="b":
+    print("Correct Answer!")
+    score+=1
+else:
+    print("Wrong..")
+print("Score",score)
+
+print("3.What is the result of 10 % 2?\na.1\nb.2\nc.0\nd.5")
+choice=str(input("Enter a choice:"))
+if choice=="c":
+    print("Correct Answer!")
+    score+=1
+else:
+    print("Wrong..")
+print("Score",score)
+
+print("4.Which one is a Python data type?\na.int\nb.website\nc.browser\nd.compiler")
+choice=str(input("Enter a choice:"))
+if choice=="a":
+    print("Correct Answer!")
+    score+=1
+else:
+    print("Wrong..")
+print("Score",score)
